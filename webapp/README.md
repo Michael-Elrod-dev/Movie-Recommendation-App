@@ -11,7 +11,7 @@
 3. Run these commands:
 ```
 docker build -t movie-recommender .
-docker run -p 3000:3000 -p 8000:8000 movie-recommender
+docker run --gpus all -p 3000:3000 -p 8000:8000 movie-recommender
 ```
 4. Open your web browser and go to: http://localhost:3000
 
@@ -19,14 +19,3 @@ docker run -p 3000:3000 -p 8000:8000 movie-recommender
 - If you see "port already in use" errors, make sure no other applications are using ports 3000 or 8000
 - To stop the application, press Ctrl+C in the terminal
 ```
-
-To test this locally:
-1. Install Docker Desktop
-2. Build: `docker build -t movie-recommender .`
-3. Run: `docker run -p 3000:3000 -p 8000:8000 movie-recommender`
-
-Your entire app should now run in a single container with:
-- Next.js frontend on port 3000
-- Python backend on port 8000
-- All dependencies included
-- Model file packaged inside
