@@ -7,7 +7,7 @@
 
 ### Steps to Run
 1. Open Terminal (Command Prompt on Windows)
-2. Navigate to project directory
+2. Navigate to project directory (webapp/)
 3. Run these commands:
 ```
 docker build -t movie-recommender .
